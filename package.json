@@ -7,11 +7,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
+    "client-install": "npm install --cd client",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "client": "npm start --cd client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --cd client && npm run build --cd client"
   },
   "author": "",
   "license": "ISC",
