@@ -10,16 +10,19 @@ const fileSchema = new mongoose.Schema({
   estado: {
       type: Boolean
   },
+  clasificacion: {
+      type: String  
+  },
   diseños: {
       type: Array
   },
   fuentes: {
       type: Array
   },
-  tematica:{
+  tematicas:{
       type: Array
   },
-  corriente: {
+  corrientes: {
       type: Array
   }
 })
