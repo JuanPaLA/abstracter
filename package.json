@@ -7,14 +7,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install",
     "client-install": "npm install --cd client",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --cd client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --cd client && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install cd client && npm run build"
   },
   "author": "",
   "license": "ISC",
