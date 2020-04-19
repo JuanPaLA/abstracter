@@ -7,9 +7,6 @@ const fileSchema = new mongoose.Schema({
   input_url: {
       type: String
   },
-  estado: {
-      type: Boolean
-  },
   clasificacion: {
       type: String  
   },
